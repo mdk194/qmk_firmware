@@ -1,8 +1,5 @@
-#ifdef  DEBOUNCE
 #undef  DEBOUNCE
 #define DEBOUNCE                   10
-#endif
-
 #define MOUSEKEY_DELAY             100
 #define MOUSEKEY_INTERVAL          40
 #define MOUSEKEY_MAX_SPEED         10
@@ -10,4 +7,11 @@
 #define MOUSEKEY_WHEEL_MAX_SPEED   8
 #define MOUSEKEY_WHEEL_TIME_TO_MAX 40
 
+#undef  TAPPING_TERM
+#define TAPPING_TERM 200
 #define DISABLE_SPACE_CADET_ROLLOVER
+#define PREVENT_STUCK_MODIFIERS
+#define PERMISSIVE_HOLD
+
+#define NO_ACTION_ONESHOT
+#define NO_ACTION_MACRO
