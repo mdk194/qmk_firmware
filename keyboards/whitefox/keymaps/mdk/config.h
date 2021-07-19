@@ -4,6 +4,8 @@
 #define NO_ACTION_ONESHOT
 
 #define PERMISSIVE_HOLD
+#define IGNORE_MOD_TAP_INTERRUPT
+
 #define MOUSEKEY_DELAY             100
 #define MOUSEKEY_INTERVAL          40
 #define MOUSEKEY_MAX_SPEED         10
