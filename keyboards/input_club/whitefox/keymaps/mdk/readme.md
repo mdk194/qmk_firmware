@@ -6,9 +6,9 @@
     - QWERTY
 - Space cadet
 - Swap ctrl alt
-- Swap caps esc
 - Caps -> Alt + esc
 - Mouse Keys
+- Caps word
 
 ## Building and flashing
 1. Clone with:
