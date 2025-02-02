@@ -29,9 +29,13 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 AUDIO_ENABLE = no           # Audio output
+GRAVE_ESC_ENABLE = no
+MAGIC_ENABLE = no
+TAP_DANCE_ENABLE = no
+CAPS_WORD_ENABLE = yes
 BACKLIGHT_DRIVER = custom
 VISUALIZER_ENABLE = no
-LTO_ENABLE = no
+LTO_ENABLE = yes
 
 LED_DRIVER = is31fl3731c
 LED_WIDTH = 16
@@ -40,6 +44,8 @@ LED_HEIGHT = 5
 LAYOUTS = 65_ansi_blocker
 
 # Enter lower-power sleep mode when on the ChibiOS idle thread
-OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
+# OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
 
 DEBOUNCE_TYPE = sym_defer_g
+
+AVR_USE_MINIMAL_PRINTF = yes
