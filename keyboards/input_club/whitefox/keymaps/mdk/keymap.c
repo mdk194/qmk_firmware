@@ -39,22 +39,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     /* Function
      * ,----------------------------------------------------------------.
-     * |   | F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|   |   |    |
+     * |   | F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|   | BLTG|  |
      * |----------------------------------------------------------------|
      * |     |  |MS_U|   |   |   |   |BTN1|BTN3|BTN2|   |   |   |    |  |
      * |----------------------------------------------------------------|
      * |     |MS_L|MS_D|MS_R|   |   |   |   |   |   |   |   |       |   |
      * |----------------------------------------------------------------|
-     * |    |   |   |   |   |   |   |   |   |   |   |   |     |VOLU|    |
+     * |    |   |   |   |   |   |   |   |   |   |   |   |     |BL_UP|   |
      * |----------------------------------------------------------------|
-     * |    |    |    |                |    |    |    |  |MPRV|VOLD|MNXT|
+     * |    |    |    |    BL_BRTG  |    |    |    |  |MPRV|BL_DOWN|MNXT|
      * `----------------------------------------------------------------'
      */
     [1] = LAYOUT_all( \
-      KC_TRNS,  KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9, KC_F10, KC_F11, KC_F12,KC_TRNS,KC_TRNS,KC_TRNS,
+      KC_TRNS,  KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9, KC_F10, KC_F11, KC_F12,KC_TRNS,BL_TOGG,KC_TRNS,
       KC_TRNS,KC_TRNS,KC_MS_U,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_BTN1,KC_BTN3,KC_BTN2,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,        KC_TRNS,
       KC_TRNS,KC_MS_L,KC_MS_D,KC_MS_R,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,        KC_HOME,
-      KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,        KC_VOLU, KC_END,
-      KC_TRNS,KC_TRNS,KC_TRNS,                   KC_TRNS,                     KC_TRNS,KC_TRNS,KC_TRNS,        KC_MPRV,KC_VOLD,KC_MNXT
+      KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,        BL_UP, KC_END,
+      KC_TRNS,KC_TRNS,KC_TRNS,                   BL_BRTG,                     KC_TRNS,KC_TRNS,KC_TRNS,        KC_MPRV,BL_DOWN,KC_MNXT
     ),
 };

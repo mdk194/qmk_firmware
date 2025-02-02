@@ -25,7 +25,6 @@ COMMAND_ENABLE = no         # Commands for debug and configuration
 SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
 # if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 NKRO_ENABLE = yes           # USB Nkey Rollover
-BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 AUDIO_ENABLE = no           # Audio output
@@ -47,5 +46,3 @@ LAYOUTS = 65_ansi_blocker
 # OPT_DEFS += -DCORTEX_ENABLE_WFI_IDLE=TRUE
 
 DEBOUNCE_TYPE = sym_defer_g
-
-AVR_USE_MINIMAL_PRINTF = yes
