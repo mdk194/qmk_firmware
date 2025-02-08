@@ -41,20 +41,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * ,----------------------------------------------------------------.
      * |   | F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|   | BLTG|  |
      * |----------------------------------------------------------------|
-     * |     |  |MS_U|   |   |   |   |BTN1|BTN3|BTN2|   |   |   |    |  |
-     * |----------------------------------------------------------------|
-     * |     |MS_L|MS_D|MS_R|   |   |   |   |   |   |   |   |       |   |
-     * |----------------------------------------------------------------|
-     * |    |   |   |   |   |   |   |   |   |   |   |   |     |BL_UP|   |
-     * |----------------------------------------------------------------|
-     * |    |    |    |    BL_BRTG  |    |    |    |  |MPRV|BL_DOWN|MNXT|
-     * `----------------------------------------------------------------'
+      * ┌────────────┬─────────┬─────────┬──────────┬──────────┬────────┐────────────┬─────────┬─────────┬──────────┬──────────┬────────┐
+      * │ _______    │ _______ │ KC_WSCH │ MS_BTN5  │ MS_BTN4  │ _______│ MS_WHLL    │ MS_WHLD │ MS_WHLU │ MS_WHLR  │ MS_BTN1  │ KC_PGUP│
+      * ├────────────┼─────────┼─────────┼──────────┼──────────┼────────┤────────────┼─────────┼─────────┼──────────┼──────────┼────────┤
+      * │ _______    │ _______ │ MS_BTN2 │ MS_BTN3  │ MS_BTN1  │ _______│ KC_LEFT    │ KC_DOWN │ KC_UP   │ KC_RGHT  │ MS_BTN3  │ KC_PGDN│
+      * ├────────────┼─────────┼─────────┼──────────┼──────────┼────────┤────────────┼─────────┼─────────┼──────────┼──────────┼────────┤
+      * │ _______    │ _______ │ KC_UNDO │ KC_PSTE  │ KC_COPY  │ KC_CUT │ MS_LEFT    │ MS_DOWN │ MS_UP   │ MS_RGHT  │ MS_BTN2  │ KC_DEL │
+      * └────────────┴─────────┴─────────┴──────────┴──────────┴────────┘────────────┴─────────┴─────────┴──────────┴──────────┴────────┘
      */
     [1] = LAYOUT_all( \
       KC_TRNS,  KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F6,  KC_F7,  KC_F8,  KC_F9, KC_F10, KC_F11, KC_F12,KC_TRNS,BL_TOGG,KC_TRNS,
-      KC_TRNS,KC_TRNS,KC_MS_U,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_BTN1,KC_BTN3,KC_BTN2,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,        KC_TRNS,
-      KC_TRNS,KC_MS_L,KC_MS_D,KC_MS_R,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,        KC_HOME,
-      KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,        BL_UP, KC_END,
+      KC_TRNS,KC_TRNS,KC_WSCH,MS_BTN5,MS_BTN4,KC_TRNS,MS_WHLL,MS_WHLD,MS_WHLU,MS_WHLR,MS_BTN1,KC_PGUP,KC_TRNS,KC_TRNS,        KC_TRNS,
+      KC_TRNS,KC_TRNS,MS_BTN2,MS_BTN3,MS_BTN1,KC_TRNS,KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,MS_BTN3,KC_PGDN,KC_TRNS,KC_TRNS,        KC_HOME,
+      KC_TRNS,KC_TRNS,KC_TRNS,KC_UNDO,KC_PSTE,KC_COPY,KC_CUT ,MS_LEFT,MS_DOWN,MS_UP  ,MS_RGHT,MS_BTN2,KC_DEL ,        BL_UP, KC_END,
       KC_TRNS,KC_TRNS,KC_TRNS,                   BL_BRTG,                     KC_TRNS,KC_TRNS,KC_TRNS,        KC_MPRV,BL_DOWN,KC_MNXT
     ),
 };
