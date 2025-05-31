@@ -16,6 +16,38 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 #include QMK_KEYBOARD_H
 
+const uint16_t PROGMEM er_left[] = {KC_E, KC_R, COMBO_END};
+const uint16_t PROGMEM cv_right[] = {KC_C, KC_V, COMBO_END};
+const uint16_t PROGMEM ui_up[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM mcomma_down[] = {KC_M, KC_COMM, COMBO_END};
+
+const uint16_t PROGMEM df_capword[] = {KC_D, KC_F, COMBO_END};
+const uint16_t PROGMEM jk_enter[] = {KC_J, KC_K, COMBO_END};
+
+const uint16_t PROGMEM rt_left_parent[] = {KC_R, KC_T, COMBO_END};
+const uint16_t PROGMEM yu_right_parent[] = {KC_Y, KC_U, COMBO_END};
+const uint16_t PROGMEM fg_left_bracket[] = {KC_F, KC_G, COMBO_END};
+const uint16_t PROGMEM hj_right_bracket[] = {KC_H, KC_J, COMBO_END};
+const uint16_t PROGMEM vb_left_curly[] = {KC_V, KC_B, COMBO_END};
+const uint16_t PROGMEM nm_right_curly[] = {KC_N, KC_M, COMBO_END};
+
+combo_t key_combos[] = {
+    COMBO(er_left, KC_LEFT),
+    COMBO(cv_right, KC_RIGHT),
+    COMBO(ui_up, KC_UP),
+    COMBO(mcomma_down, KC_DOWN),
+
+    COMBO(df_capword, CW_TOGG),
+    COMBO(jk_enter, KC_ENT),
+
+    COMBO(rt_left_parent, LSFT(KC_9)),
+    COMBO(yu_right_parent, LSFT(KC_0)),
+    COMBO(fg_left_bracket, KC_LBRC),
+    COMBO(hj_right_bracket, KC_RBRC),
+    COMBO(vb_left_curly, LSFT(KC_LBRC)),
+    COMBO(nm_right_curly, LSFT(KC_RBRC)),
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0: Default Layer
      * ,---------------------------------------------------------------.
@@ -34,8 +66,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_GRV,         KC_1, KC_2, KC_3, KC_4, KC_5, KC_6, KC_7, KC_8, KC_9,   KC_0,   KC_MINS,KC_EQL, KC_TRNS, KC_BSPC, KC_INS,
       LT(1, KC_TAB),  KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O,   KC_P,   KC_LBRC,KC_RBRC,KC_BSLS,        KC_DEL,
       LALT_T(KC_ESC), KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L,   KC_SCLN,KC_QUOT,KC_TRNS,  KC_ENT,         KC_PGUP,
-      SC_LSPO,        KC_TRNS,  KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM,KC_DOT, KC_SLSH,SC_RSPC,        KC_UP,  KC_PGDN,
-      KC_LALT,        KC_LGUI,KC_LCTL,                 KC_SPC,             KC_RCTL,MO(1),KC_TRNS,          KC_LEFT,KC_DOWN,KC_RGHT
+      KC_LSFT,        KC_TRNS,  KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM,KC_DOT, KC_SLSH,KC_RSFT,        KC_UP,  KC_PGDN,
+      KC_LALT,        KC_LGUI,  LCTL_T(KC_BSPC),           KC_SPC,           KC_RCTL,MO(1),KC_TRNS,          KC_LEFT,KC_DOWN,KC_RGHT
     ),
     /* Function
      * ,----------------------------------------------------------------.

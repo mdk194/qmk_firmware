@@ -4,11 +4,25 @@
 
 - Base Layers
     - QWERTY
-- Space cadet
+- combo
+    - er -> left
+    - cv -> right
+    - ui -> up
+    - m, -> down
+
+    - df -> capwords
+    - jk -> enter
+
+    - rt -> left_parenthesis
+    - fg -> left_bracket
+    - vb -> left_curly_brace
+    - yu -> right_parenthesis
+    - hj -> right_bracket
+    - nm -> right_curly_brace
+
 - Swap ctrl alt
 - Caps -> Alt + esc
 - Mouse Keys
-- Caps word
 
 ## Building and flashing
 1. Clone with:
