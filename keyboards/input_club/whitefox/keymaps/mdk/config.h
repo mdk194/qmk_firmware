@@ -6,4 +6,4 @@
 
 #define BACKLIGHT_DEFAULT_ON false
 #define BACKLIGHT_DEFAULT_BREATHING false
-#define COMBO_TERM 20
+#define COMBO_TERM 15
